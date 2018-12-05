@@ -1,0 +1,52 @@
+.filterable-table {
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,.2),
+                0 16px 24px 2px rgba(0,0,0,.14),
+                0 6px 30px 5px rgba(0,0,0,.12);
+    border-radius: 4px;
+    padding: 1rem;
+    color: #fff;
+}
+
+.search-box {
+    margin-bottom: .5rem;
+    &__textfield {
+        display: block;
+        background: transparent;
+        border: 0;
+        padding: .5rem 1rem;
+        border-bottom: 2px solid rgba(#fff, .5);
+        outline: none;
+        width: 100%;
+        color: #fff;
+        &:hover {
+            border-bottom: 2px solid rgba(#fff, .8);
+        }
+        &:focus {
+            border-bottom: 2px solid rgba(#fff, 1);
+        }
+        &::placeholder {
+            color: rgba(#fff, .5);
+        }
+    }
+    &__checkbox {
+        display: block;
+        margin-top: .5rem;
+    }
+}
+
+.product-table {
+    width: 100%;
+    tr.out-of-stock {
+        color: rgba(195, 195, 195, .87);
+    }
+    td {
+        padding: 2px 0;
+    }
+    &__category {
+        font-size: 1.1rem;
+        font-weight: bold;
+        & td {
+            padding: .8rem 0 2px 0px;
+        }
+    }
+}
