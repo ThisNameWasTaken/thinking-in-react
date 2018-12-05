@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import FilterableTable from './FilterableTable';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(<FilterableTable />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
