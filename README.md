@@ -1,3 +1,13 @@
+# Thinking in React ⚛️
+
+This project contains a filterable table of products I have created fallowing the [thinking in react](https://reactjs.org/docs/thinking-in-react.html) docs from [ReactJS](https://reactjs.org). 
+
+## End result
+
+![a table on a dark background that contains a textfield, a checkbox and a list of items](../assets/table_screenshot.png "Filterable products table")
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
