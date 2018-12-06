@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './FilterableTable.scss';
+import Checkbox from './Checkbox';
 
 function SearchBox(props) {
   return (
@@ -9,15 +10,14 @@ function SearchBox(props) {
         type="text"
         value={props.value}
         placeholder="Search..."
+        aria-label="Search products"
         onChange={props.onChange} />
-      <label className="search-box__checkbox">
-        <input
-          type="checkbox"
-          name="stock-only"
-          checked={props.showStockedOnly}
-          onChange={props.onChange} />
-        <span>Show only products in stock</span>
-      </label>
+      <Checkbox
+        className="search-box__checkbox"
+        value="Show only stocked products"
+        name="stock-only"
+        checked={props.showStockedOnly}
+        onChange={props.onChange} />
     </div>
   );
 }
